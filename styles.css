@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+/* font-family: 'Outfit', sans-serif; */
+
+:root {
+    --softblue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --white: hsl(0, 0%, 100%);
+    --mainbg: hsl(217, 54%, 11%);
+    --cardbg: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Outfit', sans-serif;
+    background: var(--mainbg);
+}
+
+.container { 
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    box-shadow: 0 1.25rem 1.8rem hsl(217, 86%, 8%);
+    background-color: var(--cardbg);
+    margin: 2rem 1rem;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.top-img img {
+    display: block;
+    width: 100%;
+}
+
+.top-img {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.img-overlay img {
+    width: 50px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.img-overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: hsla(178, 96%, 44%, 0.5);
+    display: none;
+}
+
+.top-img:hover .img-overlay {
+    display: block;
+    cursor: pointer;
+}
+
+.card-txt a {
+    display: inline-block;
+    padding: 20px 0;
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.card-txt a:hover {
+    color: var(--cyan)
+}
+
+.p-desc {
+    color: var(--softblue);
+    font-weight: 300;
+    font-size: 1em;
+}
+
+.flex-items {
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.eth-value, .days-lft {
+    display: flex;
+    align-items: center;
+}
+
+.eth-value p {
+    padding: 0 7px;
+    font-weight: 400;
+    color: var(--cyan);
+    font-size: 15px;
+}
+
+.days-lft p {
+    padding-left: 8px;
+    color: var(--softblue);
+    font-size: 14px;
+}
+
+hr {
+    background-color: var(--line);
+    border: none;
+    height: 1px;
+}
+
+.creator {
+    padding-top: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.creator img {
+    margin-right: 1em;
+    height: 32px;
+    width: 32px;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+}
+
+.creator p {
+    color: var(--softblue);
+    font-size: 1em;
+    font-weight: 300;
+}
+
+
+
+.creator p a {
+    color: var(--white);
+    font-weight: 300;
+    font-size: 1em;
+
+}
+
+.creator p a:hover {
+    color: var(--cyan);
+} 
+
